@@ -87,7 +87,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="113"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oRn-Wx-1wL" id="00c-Jl-kgh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minx Arcana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y4-8S-t27">
@@ -157,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="2086" y="36"/>
         </scene>
-        <!--Sign InVC-->
+        <!--SignInVC-->
         <scene sceneID="tCt-N7-JCz">
             <objects>
-                <viewController id="ox7-4s-fSj" customClass="SignInVC" customModule="Nite_Owl_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SignInVC" id="ox7-4s-fSj" customClass="SignInVC" customModule="Nite_Owl_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H0f-7k-Kte"/>
                         <viewControllerLayoutGuide type="bottom" id="HK1-ud-LKy"/>
@@ -179,7 +179,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.70196078431372544" green="0.61568627450980395" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="II1-fo-fi1" firstAttribute="centerX" secondItem="imc-Ob-LVK" secondAttribute="centerX" id="98i-yQ-UH7"/>
                                     <constraint firstItem="II1-fo-fi1" firstAttribute="top" secondItem="imc-Ob-LVK" secondAttribute="top" constant="11" id="WaE-9t-DLd"/>
@@ -188,7 +188,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oc3-qx-eft">
                                 <rect key="frame" x="0.0" y="592" width="375" height="75"/>
-                                <color key="backgroundColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="4tn-u9-q5U"/>
                                 </constraints>
@@ -218,20 +218,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Eg-H3-v4Z">
                                         <rect key="frame" x="0.0" y="40" width="250" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGl-oV-qbA">
                                         <rect key="frame" x="0.0" y="80" width="250" height="32"/>
-                                        <color key="backgroundColor" red="0.37647058823529411" green="0.49019607843137253" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.79680293798446655" green="0.71888506412506104" blue="0.040962226688861847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Sign In">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -240,7 +240,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.91764705882352937" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dO1-vr-VGR" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="1fA-VD-PUb"/>
                             <constraint firstItem="Iwg-44-nR5" firstAttribute="top" secondItem="DzQ-dD-4Bn" secondAttribute="bottom" constant="17.5" id="7p1-iq-ejG"/>
