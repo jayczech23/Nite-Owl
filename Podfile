@@ -8,5 +8,6 @@ target 'Nite-Owl_2.0' do
   # Pods for Nite-Owl_2.0
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'IQKeyboardManagerSwift'
 
 end

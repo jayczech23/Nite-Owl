@@ -13,6 +13,7 @@
 		554AF7D71DF0FA7B00AA014C /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF7D01DF0FA7B00AA014C /* GFGeoHash.m */; };
 		554AF7D81DF0FA7B00AA014C /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF7D21DF0FA7B00AA014C /* GFGeoHashQuery.m */; };
 		554AF7D91DF0FA7B00AA014C /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF7D41DF0FA7B00AA014C /* GFQuery.m */; };
+		555D78F31DF895B700EBFF12 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D78F21DF895B700EBFF12 /* SignInVC.swift */; };
 		556490BF1DC19B5800193459 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556490BE1DC19B5800193459 /* MapVC.swift */; };
 		556490C31DC1A9D800193459 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556490C21DC1A9D800193459 /* FeedCell.swift */; };
 		55755EED1DB19451006FCBE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55755EEC1DB19451006FCBE8 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		554AF7D31DF0FA7B00AA014C /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		554AF7D41DF0FA7B00AA014C /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		554AF7DA1DF0FAD200AA014C /* NiteOwl-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NiteOwl-Bridging-Header.h"; sourceTree = "<group>"; };
+		555D78F21DF895B700EBFF12 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		556490BE1DC19B5800193459 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		556490C21DC1A9D800193459 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		55755EE91DB19451006FCBE8 /* Nite-Owl_2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nite-Owl_2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 			children = (
 				55755EEE1DB19451006FCBE8 /* VenueVC.swift */,
 				556490BE1DC19B5800193459 /* MapVC.swift */,
+				555D78F21DF895B700EBFF12 /* SignInVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				556490C31DC1A9D800193459 /* FeedCell.swift in Sources */,
 				554AF7D71DF0FA7B00AA014C /* GFGeoHash.m in Sources */,
 				554AF7D91DF0FA7B00AA014C /* GFQuery.m in Sources */,
+				555D78F31DF895B700EBFF12 /* SignInVC.swift in Sources */,
 				556490BF1DC19B5800193459 /* MapVC.swift in Sources */,
 				55755EF51DB19451006FCBE8 /* Nite_Owl_2_0.xcdatamodeld in Sources */,
 				554AF7D81DF0FA7B00AA014C /* GFGeoHashQuery.m in Sources */,
