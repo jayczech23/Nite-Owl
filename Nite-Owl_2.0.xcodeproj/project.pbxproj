@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		554AF7C21DF0F87800AA014C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 554AF7C11DF0F87800AA014C /* GoogleService-Info.plist */; };
+		5549EC601DFB50650073F73F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5549EC5F1DFB50650073F73F /* GoogleService-Info.plist */; };
 		554AF7D51DF0FA7B00AA014C /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF7CC1DF0FA7B00AA014C /* GeoFire.m */; };
 		554AF7D61DF0FA7B00AA014C /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF7CE1DF0FA7B00AA014C /* GFBase32Utils.m */; };
 		554AF7D71DF0FA7B00AA014C /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF7D01DF0FA7B00AA014C /* GFGeoHash.m */; };
@@ -33,7 +33,8 @@
 /* Begin PBXFileReference section */
 		1F8F24BFA0CD5A7A22AC1E8C /* Pods_Nite_Owl_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nite_Owl_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EA7BF39E903664DEDFBAC5 /* Pods-Nite-Owl_2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nite-Owl_2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nite-Owl_2.0/Pods-Nite-Owl_2.0.debug.xcconfig"; sourceTree = "<group>"; };
-		554AF7C11DF0F87800AA014C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5549EC5F1DFB50650073F73F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5549EC611DFB55A80073F73F /* Nite-Owl_2.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Nite-Owl_2.0.entitlements"; sourceTree = "<group>"; };
 		554AF7C51DF0FA7B00AA014C /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
 		554AF7C61DF0FA7B00AA014C /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
 		554AF7C71DF0FA7B00AA014C /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 		55755EEB1DB19451006FCBE8 /* Nite-Owl_2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				5549EC611DFB55A80073F73F /* Nite-Owl_2.0.entitlements */,
 				55ECAE151DF8BFC6003EC018 /* Util */,
 				55D7A4C31DB5526700EA1384 /* Controller */,
 				55D7A4C21DB5526400EA1384 /* View */,
@@ -151,9 +153,9 @@
 				55755EF61DB19451006FCBE8 /* Assets.xcassets */,
 				55755EF81DB19451006FCBE8 /* LaunchScreen.storyboard */,
 				55755EFB1DB19451006FCBE8 /* Info.plist */,
-				554AF7C11DF0F87800AA014C /* GoogleService-Info.plist */,
-				55755EF31DB19451006FCBE8 /* Nite_Owl_2_0.xcdatamodeld */,
+				5549EC5F1DFB50650073F73F /* GoogleService-Info.plist */,
 				554AF7DA1DF0FAD200AA014C /* NiteOwl-Bridging-Header.h */,
+				55755EF31DB19451006FCBE8 /* Nite_Owl_2_0.xcdatamodeld */,
 			);
 			path = "Nite-Owl_2.0";
 			sourceTree = "<group>";
@@ -249,6 +251,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = UCEY2ZV2YM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -276,8 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55755EFA1DB19451006FCBE8 /* LaunchScreen.storyboard in Resources */,
-				554AF7C21DF0F87800AA014C /* GoogleService-Info.plist in Resources */,
 				55755EF71DB19451006FCBE8 /* Assets.xcassets in Resources */,
+				5549EC601DFB50650073F73F /* GoogleService-Info.plist in Resources */,
 				55755EF21DB19451006FCBE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +481,7 @@
 			baseConfigurationReference = 22EA7BF39E903664DEDFBAC5 /* Pods-Nite-Owl_2.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Nite-Owl_2.0/Nite-Owl_2.0.entitlements";
 				DEVELOPMENT_TEAM = UCEY2ZV2YM;
 				INFOPLIST_FILE = "Nite-Owl_2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -489,6 +497,7 @@
 			baseConfigurationReference = B3C6E270A690336E13C0462C /* Pods-Nite-Owl_2.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Nite-Owl_2.0/Nite-Owl_2.0.entitlements";
 				DEVELOPMENT_TEAM = UCEY2ZV2YM;
 				INFOPLIST_FILE = "Nite-Owl_2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>42768005624-18tqo6jp1891evecpkpkv5rq7hkv3e26.apps.googleusercontent.com</string>
+	<string>422315240514-6og091jft23th8i2h2ookqm5t9oi3f9b.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.42768005624-18tqo6jp1891evecpkpkv5rq7hkv3e26</string>
+	<string>com.googleusercontent.apps.422315240514-6og091jft23th8i2h2ookqm5t9oi3f9b</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBdMVKNNVwRnZYmWOD__GEeOOpL-Bu_rhY</string>
+	<string>AIzaSyDTGs1SibGs1U76o25N5ADX441LTO3PYvY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>42768005624</string>
+	<string>422315240514</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.strana.niteowl</string>
 	<key>PROJECT_ID</key>
-	<string>nite-owl-821b2</string>
+	<string>niteowl-57fd1</string>
 	<key>STORAGE_BUCKET</key>
-	<string>nite-owl-821b2.appspot.com</string>
+	<string>niteowl-57fd1.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:42768005624:ios:edc2467c24d7defc</string>
+	<string>1:422315240514:ios:edc2467c24d7defc</string>
 	<key>DATABASE_URL</key>
-	<string>https://nite-owl-821b2.firebaseio.com</string>
+	<string>https://niteowl-57fd1.firebaseio.com</string>
 </dict>
 </plist>
