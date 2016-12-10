@@ -179,7 +179,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.70196078431372544" green="0.61568627450980395" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="II1-fo-fi1" firstAttribute="centerX" secondItem="imc-Ob-LVK" secondAttribute="centerX" id="98i-yQ-UH7"/>
                                     <constraint firstItem="II1-fo-fi1" firstAttribute="top" secondItem="imc-Ob-LVK" secondAttribute="top" constant="11" id="WaE-9t-DLd"/>
@@ -188,7 +188,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oc3-qx-eft">
                                 <rect key="frame" x="0.0" y="592" width="375" height="75"/>
-                                <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="4tn-u9-q5U"/>
                                 </constraints>
@@ -236,6 +236,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInBtnTapped:" destination="ox7-4s-fSj" eventType="touchUpInside" id="bgd-cX-nA6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -259,6 +262,10 @@
                             <constraint firstItem="DzQ-dD-4Bn" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="xJE-ON-6tP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="ccq-jM-VFV" id="6Uy-eB-kzM"/>
+                        <outlet property="passwordTxtField" destination="4Eg-H3-v4Z" id="Kgk-oT-0Tt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRs-IV-dbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
