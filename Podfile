@@ -10,6 +10,7 @@ target 'Nite-Owl_2.0' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'Google/SignIn'
   pod 'IQKeyboardManagerSwift'
   pod 'FacebookCore'
   pod 'FacebookLogin'

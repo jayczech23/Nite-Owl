@@ -9,17 +9,20 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import GoogleSignIn
 
 import FacebookLogin
 import FacebookCore
 
-class SignInVC: UIViewController {
+class SignInVC: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet weak var emailTxtField: FancyField!
     @IBOutlet weak var passwordTxtField: FancyField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
 
     }
 //-----------------------------------------------------------------
@@ -93,4 +96,18 @@ class SignInVC: UIViewController {
     }
     
 //-----------------------------------------------------------------
+    
+    @IBAction func googleBtnTapped(_ sender: Any) {
+        
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+ 
 }
