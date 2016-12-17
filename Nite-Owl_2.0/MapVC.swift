@@ -82,7 +82,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     }
 //----------------------------------------------------------------
     
-    // custom annotation icon for user location 'Blip'
+   /* // custom annotation icon for user location 'Blip'
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         var annotationView: MKAnnotationView?
@@ -92,7 +92,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             annotationView?.image = UIImage(named: "user")
         }
         return annotationView
-    }
+    }*/
 //----------------------------------------------------------------
     
     @IBAction func signOutBtnTapped(_ sender: Any) {

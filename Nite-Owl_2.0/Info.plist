@@ -62,5 +62,7 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Nite Owl needs your location.</string>
 </dict>
 </plist>
