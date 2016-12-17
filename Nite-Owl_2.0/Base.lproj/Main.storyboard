@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ox7-4s-fSj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ox7-4s-fSj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -298,6 +298,7 @@
                     <connections>
                         <outlet property="emailTxtField" destination="ccq-jM-VFV" id="6Uy-eB-kzM"/>
                         <outlet property="passwordTxtField" destination="4Eg-H3-v4Z" id="Kgk-oT-0Tt"/>
+                        <segue destination="dLj-IZ-P55" kind="show" identifier="signIn" id="Bne-U6-7kD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRs-IV-dbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -319,10 +320,22 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4O4-1c-cxf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqF-Nb-lWG">
+                                <rect key="frame" x="16" y="617" width="76" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="697-Qy-D8s"/>
+                                </constraints>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutBtnTapped:" destination="dLj-IZ-P55" eventType="touchUpInside" id="8Ve-jv-ata"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4O4-1c-cxf" firstAttribute="leading" secondItem="Zcu-ZJ-cGS" secondAttribute="leading" id="681-AO-SGI"/>
+                            <constraint firstItem="vXN-9q-yzF" firstAttribute="top" secondItem="FqF-Nb-lWG" secondAttribute="bottom" constant="20" id="MsT-Sj-N8Q"/>
+                            <constraint firstItem="FqF-Nb-lWG" firstAttribute="leading" secondItem="Zcu-ZJ-cGS" secondAttribute="leadingMargin" id="jZh-MC-fgI"/>
                             <constraint firstItem="4O4-1c-cxf" firstAttribute="top" secondItem="Zcu-ZJ-cGS" secondAttribute="top" id="m8l-tk-whu"/>
                             <constraint firstAttribute="trailing" secondItem="4O4-1c-cxf" secondAttribute="trailing" id="wV0-Dm-emJ"/>
                             <constraint firstItem="vXN-9q-yzF" firstAttribute="top" secondItem="4O4-1c-cxf" secondAttribute="bottom" id="yId-En-35M"/>
@@ -330,11 +343,12 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="4O4-1c-cxf" id="nub-EG-LbT"/>
+                        <segue destination="ox7-4s-fSj" kind="show" identifier="signOut" id="bbS-70-zBu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edz-0H-4rC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1343" y="36"/>
+            <point key="canvasLocation" x="1341.5999999999999" y="35.532233883058474"/>
         </scene>
     </scenes>
     <resources>

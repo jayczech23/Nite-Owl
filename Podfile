@@ -15,5 +15,6 @@ target 'Nite-Owl_2.0' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+  pod 'SwiftKeychainWrapper'
   
 end

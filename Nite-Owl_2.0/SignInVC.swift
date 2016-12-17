@@ -10,9 +10,9 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import GoogleSignIn
-
 import FacebookLogin
 import FacebookCore
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController, GIDSignInUIDelegate {
 
@@ -25,6 +25,17 @@ class SignInVC: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
 
     }
+//-----------------------------------------------------------------
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            print("JAY: ID FOUND IN KEYCHAIN.")
+            performSegue(withIdentifier: signInSegue, sender: nil)
+            
+        }
+        
+    }
+    
+    
 //-----------------------------------------------------------------
 
     @IBAction func facebookBtnTapped(_ sender: Any) {
@@ -45,6 +56,7 @@ class SignInVC: UIViewController, GIDSignInUIDelegate {
 }
   
 //-----------------------------------------------------------------
+    
     @IBAction func signInBtnTapped(_ sender: Any) {
         
         guard let email = emailTxtField.text, email.characters.count > 0 && isValidEmail(testStr: email) else {
@@ -57,15 +69,24 @@ class SignInVC: UIViewController, GIDSignInUIDelegate {
             return
         }
         
+        // new user
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
             if error == nil {
                 print("Successfully registered into Firebase w/ Email.")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
             } else {
+                
+                // existing user
                 FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                     if error != nil {
                         print("JAY: Unable to authenticate w/ Firebase using email.")
                     } else {
                         print("JAY: Successfully SIGNED INTO FIREBASE w/ email!")
+                        if let user = user {
+                            self.completeSignIn(id: user.uid)
+                        }
                     }
                 })
             }
@@ -81,6 +102,9 @@ class SignInVC: UIViewController, GIDSignInUIDelegate {
             
             }else {
                 print("JAY: Successfully authenticated w/ Firebase!")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
             }
         })
     }
@@ -102,9 +126,13 @@ class SignInVC: UIViewController, GIDSignInUIDelegate {
     }
 //-----------------------------------------------------------------
     
-    
-    
-
+    func completeSignIn(id: String) {
+        
+        let keyChainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("JAY: data saved to keychain? \(keyChainResult)")
+        performSegue(withIdentifier: signInSegue, sender: nil)
+        
+    }
 //-----------------------------------------------------------------
     
     

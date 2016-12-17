@@ -8,6 +8,8 @@
 
 import UIKit
 import MapKit
+import Firebase
+import SwiftKeychainWrapper
 
 class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
@@ -90,6 +92,17 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             annotationView?.image = UIImage(named: "user")
         }
         return annotationView
+    }
+//----------------------------------------------------------------
+    
+    @IBAction func signOutBtnTapped(_ sender: Any) {
+        
+        let keyChainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        print("JAY: REMOVED FROM KEYCHAIN? \(keyChainResult)")
+        try! FIRAuth.auth()?.signOut()
+        
+        performSegue(withIdentifier: signOutSegue, sender: nil)
+        
     }
 //----------------------------------------------------------------
     

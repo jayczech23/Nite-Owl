@@ -88,6 +88,7 @@ PODS:
   - GTMSessionFetcher/Full (1.1.7):
     - GTMSessionFetcher/Core (= 1.1.7)
   - IQKeyboardManagerSwift (4.0.7)
+  - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
   - FacebookCore
@@ -99,6 +100,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - Google/SignIn
   - IQKeyboardManagerSwift
+  - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -124,7 +126,8 @@ SPEC CHECKSUMS:
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
   IQKeyboardManagerSwift: 58bbcf46b5cf9fd4ed625d28a60cb2fbae4ab0f4
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: ec9e085bf0ed9d1c1ef9053bfa14da2e8467530d
+PODFILE CHECKSUM: 08021ac7996fcd78be2a3eadc6a8e27ec3e7ce07
 
 COCOAPODS: 1.1.0.rc.3
