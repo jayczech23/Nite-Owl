@@ -59,13 +59,13 @@ class SignInVC: UIViewController, GIDSignInUIDelegate {
         
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
             if error == nil {
-                print("Successfully Signed In w/ Email.")
+                print("Successfully registered into Firebase w/ Email.")
             } else {
-                FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                     if error != nil {
                         print("JAY: Unable to authenticate w/ Firebase using email.")
                     } else {
-                        print("JAY: Successfully REGISTERED w/ email!")
+                        print("JAY: Successfully SIGNED INTO FIREBASE w/ email!")
                     }
                 })
             }
@@ -94,18 +94,18 @@ class SignInVC: UIViewController, GIDSignInUIDelegate {
         return emailTest.evaluate(with: testStr)
     
     }
-    
 //-----------------------------------------------------------------
     
     @IBAction func googleBtnTapped(_ sender: Any) {
         
         GIDSignIn.sharedInstance().signIn()
     }
+//-----------------------------------------------------------------
     
     
     
-    
-    
+
+//-----------------------------------------------------------------
     
     
     
