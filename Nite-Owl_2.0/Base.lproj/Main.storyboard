@@ -203,8 +203,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gui-EF-svV">
-                                <rect key="frame" x="36" y="202" width="304" height="139"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gui-EF-svV">
+                                <rect key="frame" x="35.5" y="202" width="304" height="139"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwg-44-nR5" customClass="RoundBtn" customModule="Nite_Owl_2_0" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="137" height="139"/>
@@ -224,7 +224,7 @@
                                             <constraint firstAttribute="width" constant="137" id="Gpg-5B-0CP"/>
                                             <constraint firstAttribute="height" constant="139" id="cGT-51-0ja"/>
                                         </constraints>
-                                        <state key="normal" title="googleBtn" image="google"/>
+                                        <state key="normal" image="google"/>
                                         <connections>
                                             <action selector="googleBtnTapped:" destination="ox7-4s-fSj" eventType="touchUpInside" id="rQl-zR-oKu"/>
                                         </connections>
@@ -235,22 +235,22 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dO1-vr-VGR">
-                                <rect key="frame" x="68" y="389" width="240" height="112"/>
+                                <rect key="frame" x="62.5" y="389" width="250" height="112"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-jM-VFV" customClass="FancyField" customModule="Nite_Owl_2_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Eg-H3-v4Z" customClass="FancyField" customModule="Nite_Owl_2_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40" width="240" height="30"/>
+                                        <rect key="frame" x="0.0" y="40" width="250" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGl-oV-qbA" customClass="FancyButton" customModule="Nite_Owl_2_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="80" width="240" height="32"/>
+                                        <rect key="frame" x="0.0" y="80" width="250" height="32"/>
                                         <color key="backgroundColor" red="0.79680293798446655" green="0.71888506412506104" blue="0.040962226688861847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Sign In">
@@ -262,13 +262,14 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="gx3-9c-zpH"/>
+                                    <constraint firstAttribute="width" constant="250" id="U5L-Ye-bVM"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Or sign in with a valid email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRs-7l-c28">
-                                <rect key="frame" x="124" y="369" width="126" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or sign in with a valid email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRs-7l-c28">
+                                <rect key="frame" x="124.5" y="360" width="126" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="126" id="HIL-5a-uym"/>
+                                    <constraint firstAttribute="height" constant="21" id="HIN-fp-xPK"/>
+                                    <constraint firstAttribute="width" constant="126" id="ebU-dS-gZ7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                 <nil key="textColor"/>
@@ -277,18 +278,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.91764705882352937" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="gui-EF-svV" secondAttribute="trailing" constant="19" id="7Xk-tf-U3v"/>
-                            <constraint firstItem="qRs-7l-c28" firstAttribute="top" secondItem="gui-EF-svV" secondAttribute="bottom" constant="28" id="DgZ-dQ-ZMA"/>
-                            <constraint firstItem="qRs-7l-c28" firstAttribute="leading" secondItem="l7q-4n-HUb" secondAttribute="leadingMargin" constant="108" id="GAf-4V-3hy"/>
+                            <constraint firstItem="dO1-vr-VGR" firstAttribute="top" secondItem="qRs-7l-c28" secondAttribute="bottom" constant="8" id="DvA-us-ef9"/>
                             <constraint firstItem="imc-Ob-LVK" firstAttribute="leading" secondItem="l7q-4n-HUb" secondAttribute="leading" id="Hcc-y4-nMX"/>
-                            <constraint firstItem="dO1-vr-VGR" firstAttribute="top" secondItem="qRs-7l-c28" secondAttribute="bottom" constant="8" id="INO-uM-gYc"/>
                             <constraint firstItem="oc3-qx-eft" firstAttribute="leading" secondItem="l7q-4n-HUb" secondAttribute="leading" id="LUA-7p-9AB"/>
-                            <constraint firstItem="gui-EF-svV" firstAttribute="leading" secondItem="l7q-4n-HUb" secondAttribute="leadingMargin" constant="20" id="U7Z-nu-C3o"/>
+                            <constraint firstItem="gui-EF-svV" firstAttribute="top" secondItem="DzQ-dD-4Bn" secondAttribute="bottom" constant="17" id="OPf-BV-OMb"/>
+                            <constraint firstItem="qRs-7l-c28" firstAttribute="top" secondItem="gui-EF-svV" secondAttribute="bottom" constant="19" id="OSa-qj-hSd"/>
+                            <constraint firstItem="qRs-7l-c28" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="PmC-9b-ef0"/>
                             <constraint firstItem="HK1-ud-LKy" firstAttribute="top" secondItem="oc3-qx-eft" secondAttribute="bottom" id="UOf-Ud-935"/>
-                            <constraint firstItem="gui-EF-svV" firstAttribute="top" secondItem="DzQ-dD-4Bn" secondAttribute="bottom" constant="17" id="WLu-Yg-65S"/>
+                            <constraint firstItem="gui-EF-svV" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="YBl-u3-zOz"/>
+                            <constraint firstItem="dO1-vr-VGR" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="ZBk-Bs-3kZ"/>
                             <constraint firstItem="imc-Ob-LVK" firstAttribute="top" secondItem="l7q-4n-HUb" secondAttribute="top" id="b6m-qX-he9"/>
-                            <constraint firstItem="dO1-vr-VGR" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="edy-is-g1G"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qRs-7l-c28" secondAttribute="trailing" constant="109" id="k3G-qa-RG4"/>
                             <constraint firstItem="DzQ-dD-4Bn" firstAttribute="top" secondItem="imc-Ob-LVK" secondAttribute="bottom" constant="17" id="qwS-Es-Txx"/>
                             <constraint firstAttribute="trailing" secondItem="imc-Ob-LVK" secondAttribute="trailing" id="qyi-ew-BZK"/>
                             <constraint firstAttribute="trailing" secondItem="oc3-qx-eft" secondAttribute="trailing" id="wIv-np-pEH"/>
