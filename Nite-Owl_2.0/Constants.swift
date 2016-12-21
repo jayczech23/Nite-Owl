@@ -16,3 +16,5 @@ let KEY_UID = "uid"
 let signOutSegue = "signOut"
 
 let signInSegue = "signIn"
+
+let backToMapSegue = "backToMap"

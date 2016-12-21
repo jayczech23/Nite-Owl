@@ -22,7 +22,6 @@ class FeedCell: UITableViewCell {
         userImage.layer.cornerRadius = 8.0
         userImage.clipsToBounds = true
     
-    
     }
     
     

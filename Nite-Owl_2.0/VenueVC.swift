@@ -41,5 +41,14 @@ class VenueVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return FeedCell()
         }
     }
+    
+    @IBAction func backBtnTapped(_ sender: Any) {
+        
+        performSegue(withIdentifier: backToMapSegue, sender: nil)
+        
+    }
+    
+    
+    
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ox7-4s-fSj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -41,6 +41,9 @@
                                                 <state key="normal" title="Back">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="backBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qUs-A8-MP8"/>
+                                                </connections>
                                             </button>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </barButtonItem>
@@ -91,41 +94,58 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minx Arcana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y4-8S-t27">
-                                                    <rect key="frame" x="84" y="0.0" width="107" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minx Arcana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y4-8S-t27">
+                                                    <rect key="frame" x="78" y="3" width="192" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="192" id="m33-mM-dyp"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sep 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phP-GU-Y47">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sep 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phP-GU-Y47">
                                                     <rect key="frame" x="306" y="0.0" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="9Zd-EW-Gzt"/>
+                                                        <constraint firstAttribute="height" constant="21" id="vUC-PK-Ay1"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.43693232536315918" green="0.4699663519859314" blue="0.50102770328521729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnh-X2-2ZM">
-                                                    <rect key="frame" x="84" y="29" width="264" height="68"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="We've got a whole lot of va-va-voom in store for you *tonight* at @nursebettienyc featuring... instagram.com/p/BJ1N9BHjlos/">
-                                                            <attributes>
-                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promoterChick" translatesAutoresizingMaskIntoConstraints="NO" id="Jbb-GL-C1g">
+                                                    <rect key="frame" x="7" y="7" width="68" height="61"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="61" id="a8U-r8-hwg"/>
+                                                        <constraint firstAttribute="width" constant="68" id="qTo-Ir-ixC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We've got a whole lot of va-va-voom in store for you *tonight* at @nursebettienyc featuring... instagram.com/p/BJ1N9BHjlos/" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lC-P0-GQq">
+                                                    <rect key="frame" x="83" y="29" width="265" height="59"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="265" id="Hqs-Py-8a3"/>
+                                                        <constraint firstAttribute="height" constant="59" id="Oeh-hP-412"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="promoterChick" translatesAutoresizingMaskIntoConstraints="NO" id="Jbb-GL-C1g">
-                                                    <rect key="frame" x="8" y="8" width="68" height="61"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3y4-8S-t27" firstAttribute="top" secondItem="00c-Jl-kgh" secondAttribute="top" constant="3" id="3oW-fs-zL8"/>
+                                                <constraint firstItem="Jbb-GL-C1g" firstAttribute="top" secondItem="00c-Jl-kgh" secondAttribute="top" constant="7" id="7ey-mb-c9y"/>
+                                                <constraint firstAttribute="trailing" secondItem="phP-GU-Y47" secondAttribute="trailing" constant="27" id="7k7-cs-wUr"/>
+                                                <constraint firstAttribute="bottom" secondItem="8lC-P0-GQq" secondAttribute="bottom" constant="24" id="FeB-00-wMJ"/>
+                                                <constraint firstItem="phP-GU-Y47" firstAttribute="top" secondItem="00c-Jl-kgh" secondAttribute="top" id="Pz4-Vh-BWP"/>
+                                                <constraint firstItem="Jbb-GL-C1g" firstAttribute="leading" secondItem="00c-Jl-kgh" secondAttribute="leading" constant="7" id="WwO-9g-qPE"/>
+                                                <constraint firstAttribute="trailing" secondItem="8lC-P0-GQq" secondAttribute="trailing" constant="27" id="Zaw-r8-xR3"/>
+                                                <constraint firstItem="8lC-P0-GQq" firstAttribute="top" secondItem="3y4-8S-t27" secondAttribute="bottom" constant="5" id="aYz-c4-wfH"/>
+                                                <constraint firstItem="3y4-8S-t27" firstAttribute="leading" secondItem="Jbb-GL-C1g" secondAttribute="trailing" constant="3" id="gYe-KQ-xJ1"/>
+                                                <constraint firstItem="8lC-P0-GQq" firstAttribute="leading" secondItem="Jbb-GL-C1g" secondAttribute="trailing" constant="8" id="wkS-Y4-Flg"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="datePosted" destination="phP-GU-Y47" id="LwX-nP-ilI"/>
-                                            <outlet property="feedContent" destination="Pnh-X2-2ZM" id="sog-d3-Qc2"/>
                                             <outlet property="userImage" destination="Jbb-GL-C1g" id="Izv-yG-siK"/>
                                             <outlet property="userName" destination="3y4-8S-t27" id="5sF-1m-RYc"/>
                                         </connections>
@@ -152,11 +172,12 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="BP2-av-hYb" id="Ak5-QD-kOo"/>
+                        <segue destination="dLj-IZ-P55" kind="show" identifier="backToMap" id="uRo-Tq-pQd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2086" y="36"/>
+            <point key="canvasLocation" x="2085.5999999999999" y="35.532233883058474"/>
         </scene>
         <!--SignInVC-->
         <scene sceneID="tCt-N7-JCz">
@@ -218,7 +239,7 @@
                                             <action selector="facebookBtnTapped:" destination="ox7-4s-fSj" eventType="touchUpInside" id="fTF-dD-Rme"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uL-2Q-v8B">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uL-2Q-v8B">
                                         <rect key="frame" x="167" y="0.0" width="137" height="139"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="137" id="Gpg-5B-0CP"/>
@@ -235,7 +256,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dO1-vr-VGR">
-                                <rect key="frame" x="62.5" y="389" width="250" height="112"/>
+                                <rect key="frame" x="63" y="389" width="250" height="112"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-jM-VFV" customClass="FancyField" customModule="Nite_Owl_2_0" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
@@ -266,7 +287,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or sign in with a valid email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRs-7l-c28">
-                                <rect key="frame" x="124.5" y="360" width="126" height="21"/>
+                                <rect key="frame" x="125" y="360" width="126" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="HIN-fp-xPK"/>
                                     <constraint firstAttribute="width" constant="126" id="ebU-dS-gZ7"/>
@@ -357,4 +378,7 @@
         <image name="owl" width="1025" height="1025"/>
         <image name="promoterChick" width="575" height="615"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uRo-Tq-pQd"/>
+    </inferredMetricsTieBreakers>
 </document>
