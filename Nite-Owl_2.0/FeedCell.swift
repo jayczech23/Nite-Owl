@@ -19,8 +19,8 @@ class FeedCell: UITableViewCell {
     
         // configure userImage to have rounded corners.
         
-        userImage.layer.cornerRadius = 8.0
-        userImage.clipsToBounds = true
+       /* userImage.layer.cornerRadius = 8.0
+        userImage.clipsToBounds = true */
     
     }
     

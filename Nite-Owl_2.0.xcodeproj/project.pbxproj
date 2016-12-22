@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55335C9E1E0B319B00C82127 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55335C9D1E0B319B00C82127 /* CircleView.swift */; };
 		5549EC601DFB50650073F73F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5549EC5F1DFB50650073F73F /* GoogleService-Info.plist */; };
 		554AF7D51DF0FA7B00AA014C /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF7CC1DF0FA7B00AA014C /* GeoFire.m */; };
 		554AF7D61DF0FA7B00AA014C /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF7CE1DF0FA7B00AA014C /* GFBase32Utils.m */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		1F8F24BFA0CD5A7A22AC1E8C /* Pods_Nite_Owl_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nite_Owl_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EA7BF39E903664DEDFBAC5 /* Pods-Nite-Owl_2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nite-Owl_2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nite-Owl_2.0/Pods-Nite-Owl_2.0.debug.xcconfig"; sourceTree = "<group>"; };
+		55335C9D1E0B319B00C82127 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		5549EC5F1DFB50650073F73F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5549EC611DFB55A80073F73F /* Nite-Owl_2.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Nite-Owl_2.0.entitlements"; sourceTree = "<group>"; };
 		554AF7C51DF0FA7B00AA014C /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				55ECAE181DF8C064003EC018 /* FancyField.swift */,
 				55ECAE1A1DF8C131003EC018 /* RoundBtn.swift */,
 				55ECAE1C1DF8C1E7003EC018 /* FancyButton.swift */,
+				55335C9D1E0B319B00C82127 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				55ECAE171DF8BFDA003EC018 /* Constants.swift in Sources */,
 				55ECAE1D1DF8C1E7003EC018 /* FancyButton.swift in Sources */,
 				55755EF51DB19451006FCBE8 /* Nite_Owl_2_0.xcdatamodeld in Sources */,
+				55335C9E1E0B319B00C82127 /* CircleView.swift in Sources */,
 				554AF7D81DF0FA7B00AA014C /* GFGeoHashQuery.m in Sources */,
 				55755EED1DB19451006FCBE8 /* AppDelegate.swift in Sources */,
 				554AF7D61DF0FA7B00AA014C /* GFBase32Utils.m in Sources */,

@@ -113,11 +113,10 @@
                                                     <color key="textColor" red="0.43693232536315918" green="0.4699663519859314" blue="0.50102770328521729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promoterChick" translatesAutoresizingMaskIntoConstraints="NO" id="Jbb-GL-C1g">
-                                                    <rect key="frame" x="7" y="7" width="68" height="61"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promoterChick" translatesAutoresizingMaskIntoConstraints="NO" id="Jbb-GL-C1g" customClass="CircleView" customModule="Nite_Owl_2_0" customModuleProvider="target">
+                                                    <rect key="frame" x="7" y="7" width="68" height="60"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="61" id="a8U-r8-hwg"/>
-                                                        <constraint firstAttribute="width" constant="68" id="qTo-Ir-ixC"/>
+                                                        <constraint firstAttribute="height" constant="60" id="blD-Zk-FWV"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We've got a whole lot of va-va-voom in store for you *tonight* at @nursebettienyc featuring... instagram.com/p/BJ1N9BHjlos/" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lC-P0-GQq">
