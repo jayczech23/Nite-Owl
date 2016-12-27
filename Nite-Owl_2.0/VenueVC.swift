@@ -19,6 +19,13 @@ class VenueVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
+        // set listener for database.
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            
+            print("JAY: \(snapshot.value)")
+        
+        })
+        
     }
 //----------------------------------------------------------------
     func numberOfSections(in tableView: UITableView) -> Int {

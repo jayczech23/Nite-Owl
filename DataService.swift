@@ -41,7 +41,7 @@ class DataService {
         return _REF_VENUES
     }
     
-    
+//-----------------------------------------------------------------
     // create DATABASE user
     func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) {
         
@@ -49,7 +49,7 @@ class DataService {
         REF_USERS.child(uid).updateChildValues(userData)
     
     }
-    
+//-----------------------------------------------------------------    
 
 }
 
