@@ -20,15 +20,15 @@ class VenueVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
         
     }
-
+//----------------------------------------------------------------
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+//----------------------------------------------------------------
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
     }
-    
+//----------------------------------------------------------------
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "feed", for: indexPath) as? FeedCell {
@@ -41,13 +41,13 @@ class VenueVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return FeedCell()
         }
     }
-    
+//----------------------------------------------------------------
     @IBAction func backBtnTapped(_ sender: Any) {
         
         performSegue(withIdentifier: backToMapSegue, sender: nil)
         
     }
-    
+//----------------------------------------------------------------    
     
     
 }
