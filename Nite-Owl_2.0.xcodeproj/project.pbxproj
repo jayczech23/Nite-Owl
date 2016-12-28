@@ -24,6 +24,7 @@
 		55755EF51DB19451006FCBE8 /* Nite_Owl_2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55755EF31DB19451006FCBE8 /* Nite_Owl_2_0.xcdatamodeld */; };
 		55755EF71DB19451006FCBE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55755EF61DB19451006FCBE8 /* Assets.xcassets */; };
 		55755EFA1DB19451006FCBE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55755EF81DB19451006FCBE8 /* LaunchScreen.storyboard */; };
+		55E5D1361E133D0100FCA77C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5D1351E133D0100FCA77C /* Post.swift */; };
 		55ECAE141DF8BF87003EC018 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ECAE131DF8BF87003EC018 /* FancyView.swift */; };
 		55ECAE171DF8BFDA003EC018 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ECAE161DF8BFDA003EC018 /* Constants.swift */; };
 		55ECAE191DF8C064003EC018 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ECAE181DF8C064003EC018 /* FancyField.swift */; };
@@ -66,6 +67,7 @@
 		55755EF61DB19451006FCBE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55755EF91DB19451006FCBE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55755EFB1DB19451006FCBE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E5D1351E133D0100FCA77C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		55ECAE131DF8BF87003EC018 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		55ECAE161DF8BFDA003EC018 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		55ECAE181DF8C064003EC018 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		55D7A4C11DB5525E00EA1384 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				55E5D1351E133D0100FCA77C /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				554AF7D81DF0FA7B00AA014C /* GFGeoHashQuery.m in Sources */,
 				55755EED1DB19451006FCBE8 /* AppDelegate.swift in Sources */,
 				554AF7D61DF0FA7B00AA014C /* GFBase32Utils.m in Sources */,
+				55E5D1361E133D0100FCA77C /* Post.swift in Sources */,
 				55ECAE191DF8C064003EC018 /* FancyField.swift in Sources */,
 				554AF7D51DF0FA7B00AA014C /* GeoFire.m in Sources */,
 			);

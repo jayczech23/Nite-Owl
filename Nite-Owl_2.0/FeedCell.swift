@@ -12,16 +12,24 @@ class FeedCell: UITableViewCell {
 
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
-    @IBOutlet weak var feedContent: UILabel!
-    @IBOutlet weak var datePosted: UILabel!
+    @IBOutlet weak var captionLbl: UILabel!
+    @IBOutlet weak var timeStampLbl: UILabel!
     
-    func configureCell() {
+    var post: Post!
     
-        // configure userImage to have rounded corners.
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
-       /* userImage.layer.cornerRadius = 8.0
-        userImage.clipsToBounds = true */
+        //
+    }
     
+    
+    func configureCell(post: Post) {
+    
+        self.post = post
+        self.captionLbl.text = post.caption
+        self.timeStampLbl.text = post.timeStamp
     }
     
     
