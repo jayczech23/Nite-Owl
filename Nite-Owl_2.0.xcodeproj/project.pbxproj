@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550A72751E1608540005A242 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A72741E1608540005A242 /* Venue.swift */; };
 		55335C9E1E0B319B00C82127 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55335C9D1E0B319B00C82127 /* CircleView.swift */; };
 		55335CA41E0CA9D500C82127 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55335CA31E0CA9D500C82127 /* DataService.swift */; };
 		5549EC601DFB50650073F73F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5549EC5F1DFB50650073F73F /* GoogleService-Info.plist */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		1F8F24BFA0CD5A7A22AC1E8C /* Pods_Nite_Owl_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nite_Owl_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EA7BF39E903664DEDFBAC5 /* Pods-Nite-Owl_2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nite-Owl_2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nite-Owl_2.0/Pods-Nite-Owl_2.0.debug.xcconfig"; sourceTree = "<group>"; };
+		550A72741E1608540005A242 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		55335C9D1E0B319B00C82127 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		55335CA31E0CA9D500C82127 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		5549EC5F1DFB50650073F73F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				55E5D1351E133D0100FCA77C /* Post.swift */,
+				550A72741E1608540005A242 /* Venue.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55755EEF1DB19451006FCBE8 /* VenueVC.swift in Sources */,
+				550A72751E1608540005A242 /* Venue.swift in Sources */,
 				556490C31DC1A9D800193459 /* FeedCell.swift in Sources */,
 				55ECAE141DF8BF87003EC018 /* FancyView.swift in Sources */,
 				554AF7D71DF0FA7B00AA014C /* GFGeoHash.m in Sources */,

@@ -19,6 +19,13 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     var mapHasCenteredOnce = false
     
+    var venues = [Venue]()
+    
+    // store locations on map in a cache.
+    static var venueCache: NSCache<NSString, NSString> = NSCache()
+    
+    
+    
     
 //----------------------------------------------------------------
     override func viewDidLoad() {
@@ -27,6 +34,22 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow
+        
+        
+        // set a listener for venues in database.
+        DataService.ds.REF_VENUES.observe(.value, with: { (snapshot) in
+            
+            self.venues = []
+            
+            // parse through data in firebase.
+            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                for snap in snapshot {
+                    print("SNAP: \(snap)")
+                }
+            }
+            
+        })
+        
         
     }
 //----------------------------------------------------------------
