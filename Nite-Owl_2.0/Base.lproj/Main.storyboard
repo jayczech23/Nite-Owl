@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ox7-4s-fSj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -64,13 +64,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Burlesque Wednesdays: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yT5-4M-2Oi">
-                                                <rect key="frame" x="0.0" y="0.0" width="199" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="199" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="10PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohx-bb-8dL">
-                                                <rect key="frame" x="236" y="0.0" width="46" height="21"/>
+                                                <rect key="frame" x="236" y="0.0" width="46" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -196,7 +196,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="II1-fo-fi1">
-                                        <rect key="frame" x="-326" y="11" width="1026" height="128"/>
+                                        <rect key="frame" x="-581" y="11" width="1536" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="qtG-Sb-MFO"/>
                                         </constraints>
@@ -217,7 +217,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Sign In Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzQ-dD-4Bn">
-                                <rect key="frame" x="113" y="167" width="149" height="18"/>
+                                <rect key="frame" x="113.5" y="167" width="148.5" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17.5" id="dCe-oJ-9WN"/>
                                 </constraints>
@@ -226,7 +226,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gui-EF-svV">
-                                <rect key="frame" x="119" y="202" width="137" height="139"/>
+                                <rect key="frame" x="35.5" y="202" width="304" height="139"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwg-44-nR5" customClass="RoundBtn" customModule="Nite_Owl_2_0" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="137" height="139"/>
@@ -241,7 +241,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uL-2Q-v8B">
-                                        <rect key="frame" x="137" y="0.0" width="0.0" height="139"/>
+                                        <rect key="frame" x="167" y="0.0" width="137" height="139"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="137" id="Gpg-5B-0CP"/>
                                             <constraint firstAttribute="height" constant="139" id="cGT-51-0ja"/>
@@ -297,19 +297,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New User?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zte-nR-dhn">
+                                <rect key="frame" x="145" y="526" width="84" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="Qmb-Oz-9Js"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xki-YG-Jvv">
+                                <rect key="frame" x="155" y="548" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="bLk-xv-GjP"/>
+                                    <constraint firstAttribute="height" constant="30" id="jYl-GN-jnU"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpBtnTapped:" destination="ox7-4s-fSj" eventType="touchUpInside" id="Hg3-jh-e5J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.91764705882352937" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dO1-vr-VGR" firstAttribute="top" secondItem="qRs-7l-c28" secondAttribute="bottom" constant="8" id="DvA-us-ef9"/>
                             <constraint firstItem="imc-Ob-LVK" firstAttribute="leading" secondItem="l7q-4n-HUb" secondAttribute="leading" id="Hcc-y4-nMX"/>
+                            <constraint firstItem="xki-YG-Jvv" firstAttribute="top" secondItem="zte-nR-dhn" secondAttribute="bottom" constant="8" id="Ilx-7d-C6L"/>
                             <constraint firstItem="oc3-qx-eft" firstAttribute="leading" secondItem="l7q-4n-HUb" secondAttribute="leading" id="LUA-7p-9AB"/>
                             <constraint firstItem="gui-EF-svV" firstAttribute="top" secondItem="DzQ-dD-4Bn" secondAttribute="bottom" constant="17" id="OPf-BV-OMb"/>
                             <constraint firstItem="qRs-7l-c28" firstAttribute="top" secondItem="gui-EF-svV" secondAttribute="bottom" constant="19" id="OSa-qj-hSd"/>
+                            <constraint firstItem="xki-YG-Jvv" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="PIG-15-e0e"/>
                             <constraint firstItem="qRs-7l-c28" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="PmC-9b-ef0"/>
                             <constraint firstItem="HK1-ud-LKy" firstAttribute="top" secondItem="oc3-qx-eft" secondAttribute="bottom" id="UOf-Ud-935"/>
                             <constraint firstItem="gui-EF-svV" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="YBl-u3-zOz"/>
+                            <constraint firstItem="zte-nR-dhn" firstAttribute="top" secondItem="dO1-vr-VGR" secondAttribute="bottom" constant="25" id="Yr3-Ue-yS1"/>
                             <constraint firstItem="dO1-vr-VGR" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="ZBk-Bs-3kZ"/>
                             <constraint firstItem="imc-Ob-LVK" firstAttribute="top" secondItem="l7q-4n-HUb" secondAttribute="top" id="b6m-qX-he9"/>
+                            <constraint firstItem="zte-nR-dhn" firstAttribute="centerX" secondItem="l7q-4n-HUb" secondAttribute="centerX" id="i4s-o6-uGh"/>
                             <constraint firstItem="DzQ-dD-4Bn" firstAttribute="top" secondItem="imc-Ob-LVK" secondAttribute="bottom" constant="17" id="qwS-Es-Txx"/>
                             <constraint firstAttribute="trailing" secondItem="imc-Ob-LVK" secondAttribute="trailing" id="qyi-ew-BZK"/>
                             <constraint firstAttribute="trailing" secondItem="oc3-qx-eft" secondAttribute="trailing" id="wIv-np-pEH"/>
@@ -376,10 +400,10 @@
         <image name="f" width="352" height="328"/>
         <image name="google" width="300" height="306"/>
         <image name="nurse_bettie_4" width="1024" height="591"/>
-        <image name="owl" width="1025" height="1025"/>
+        <image name="owl" width="1536" height="1536"/>
         <image name="promoterChick" width="575" height="615"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bne-U6-7kD"/>
+        <segue reference="uRo-Tq-pQd"/>
     </inferredMetricsTieBreakers>
 </document>
